@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	
+    "build_systems": [
+        {
+            "working_dir": "${project_path}",
+            "name": "Run",
+            "cmd": ["love", "."],
+            "shell": true
+        }
+    ]
+}
