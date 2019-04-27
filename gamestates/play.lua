@@ -3,14 +3,10 @@ local sti = require "sti"
 
 local state = {}
 
-function state:enter(previous, host, server)
+function state:enter(previous, host)
 end
-
 
 function state:leave()
-end
-
-function state:getMousePos()
 end
 
 function state:update(dt)

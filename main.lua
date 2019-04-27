@@ -17,15 +17,16 @@ Vector = require "hump.vector"
 
 GAMESTATES = {
     play = require "gamestates.play",
+    splash = require "gamestates.splash",
 }
 
 function love.load(args)
     Gamestate.registerEvents()
 
-    local state_name = args[1] or "play"
+    local state_name = args[1] or "splash"
     Gamestate.switch(GAMESTATES[state_name])
 end
 
 function love.update(dt)
-    lovebird.update()
+    lovebird.update(dt)
 end
