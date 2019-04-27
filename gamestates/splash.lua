@@ -1,6 +1,6 @@
 local state = {}
 
-function state:enter(previous, host)
+function state:enter(previous)
 	self.splash_img = love.graphics.newImage("res/Splash1.png")
 	local timer = Timer.new()
 	timer:after(1, function () Gamestate.switch(GAMESTATES.play) end)
