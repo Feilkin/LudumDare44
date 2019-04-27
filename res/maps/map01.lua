@@ -226,7 +226,7 @@ return {
         {
           id = 2,
           name = "spawn_01",
-          type = "PlayerSpawn",
+          type = "EntitySpawner",
           shape = "point",
           x = 128,
           y = 128,
@@ -234,7 +234,9 @@ return {
           height = 0,
           rotation = 0,
           visible = true,
-          properties = {}
+          properties = {
+            ["EntityClass"] = "player"
+          }
         },
         {
           id = 5,

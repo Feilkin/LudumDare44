@@ -1,11 +1,12 @@
 local tiny = require "tiny"
 
 local movement_sys = tiny.processingSystem()
-movement_sys.filter = tiny.requireAll("position", "velocity")
+movement_sys.filter = tiny.requireAll("position", "velocity", "body")
 
 function movement_sys:onAdd(e)
 	local x, y = e.position:unpack()
-	self.world.bump_world:add(e, x, y, 60, 60)
+	local w, h = e.body.width, e.body.height
+	self.world.bump_world:add(e, x, y, w, h)
 end
 
 function movement_sys:onRemove(e)

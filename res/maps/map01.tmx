@@ -125,7 +125,10 @@
   <object id="1" x="128" y="128">
    <point/>
   </object>
-  <object id="2" name="spawn_01" type="PlayerSpawn" x="128" y="128">
+  <object id="2" name="spawn_01" type="EntitySpawner" x="128" y="128">
+   <properties>
+    <property name="EntityClass" value="player"/>
+   </properties>
    <point/>
   </object>
   <object id="5" type="EntitySpawner" x="576" y="256">
